@@ -1,1 +1,274 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    Font-size: 16px;
+    font-family: 'Overpass','Ubuntu';
+}
+.navbar {
+    overflow: hidden;
+    background-color: hsl(355, 100%, 74%);
+    font-family: 'Overpass','Ubuntu';
+    background-image: url('./images/bg-pattern-intro-desktop.svg') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: hsl(237, 17%, 21%);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    background-color: hsl(237, 17%, 21%);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .btn1 {
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    border-style: solid;
+    border-color: hsl(356, 100%, 66%);
+    border-radius: 30px;
+    height: fit-content;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+  .modern{
+    background-color: hsl(355, 100%, 74%);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom-left-radius: 6rem;
+  }
+  .modern h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+  }
+  .modern p{
+    font-size: 1rem;
+    font-weight: 300;
+    color:hsl(0, 0%, 100%);
+    padding-top: 1rem;
+  }
+  .btn2 {
+    background-color: #fff;
+    color: hsl(356, 100%, 66%);
+    border-style: solid;
+    border-color: hsl(356, 100%, 66%);
+    border-radius: 30px;
+    height: fit-content;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+  .btn3 {
+    background-color: hsl(356, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    border-style: solid;
+    border-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    height: fit-content;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+
+  .intro{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .intro1{
+    width: 50%;
+    padding-top: 7rem;
+    padding-left: 7rem;
+  }
+  h1.design{
+    color: hsl(208, 49%, 24%);
+    font-size: 2rem; 
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .intro1 big{
+    color: hsl(208, 49%, 24%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    padding-top: 2rem;
+  }
+  .intro1 p{
+    color: hsl(237, 17%, 21%);
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    padding-top: 2rem;
+  }
+  .illus-1 {
+    width: 50%;
+    position: relative;
+    right: -10%;
+    padding-bottom: 3rem;
+  }
+  .illus-1 img{
+    width: 100%;
+  }
+  .state{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(237, 23%, 32%);
+    background-image: url('./images/bg-pattern-circles.svg') no-repeat;
+    background-position: center;
+    width: 100%;
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+  }
+  .illus-2{
+    width: 50%;
+    padding-left: 5rem;
+  }
+  .illus-2 img{
+    width: 100%;
+    margin-top: -5rem;
+    margin-bottom: -10rem;
+  }
+  .intro2{
+    width: 50%;
+  }
+  .state big{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    padding-top: 10rem;
+  }
+  .state p{
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    padding-top: 2rem;
+  }
+  .free{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+  .intro3{
+    width: 50%;
+    padding-top: 7rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  .intro3 big{
+    color: hsl(208, 49%, 24%);
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+    padding-top: 2rem;
+  }
+  .intro3 p{
+    color: hsl(237, 17%, 21%);
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    padding-top: 2rem;
+  }
+  .illus-3 {
+    width: 50%;
+    position: relative;
+    left: -15%;
+    padding-bottom: 3rem;
+  }
+  .illus-3 img{
+    width: 100%;
+  }
+  .footer {
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    border-top-right-radius: 6rem;
+  }
+.footer h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding-left: 7rem;
+}
+.footer a{
+    text-decoration: none;
+    color:  hsl(0, 0%, 100%);
+    display: block;
+    padding-top: 1rem;
+    padding-right: 5rem;
+}
+.footer a:hover{
+    color: hsl(13, 100%, 72%);
+}
+.footer p{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    padding-right: 5rem;
+}
+/* .links{
+    display: flex;
+} */
+/* .attribution {
+    display: block;
+} */

@@ -17,36 +17,48 @@
 <body>
 <nav class="navbar">
 <h1>Blogr</h1>
-<label for="product">Product</label>
 
-<select name="product" id="product">
-  <option value="overview">Overview</option>
-  <option value="pricing">Pricing</option>
-  <option value="marketplace">Marketplace</option>
-  <option value="features">Features</option>
-  <option value="integration">integration</option>
-</select>
+<div class="drop">
+  <div class="dropdown">
+    <button class="dropbtn">Product
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Overview</a>
+      <a href="#">Pricing</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Features</a>
+      <a href="#">Integration</a>
+    </div>
+  </div>
 
-<label for="company">Company</label>
+  <div class="dropdown">
+    <button class="dropbtn">Company
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">About</a>
+      <a href="#">Team</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+  </div>
 
-<select name="company" id="company">
-  <option value="about">About</option>
-  <option value="team">Team</option>
-  <option value="blog">Blog</option>
-  <option value="careers">Careers</option>
-</select>
-
-<label for="connect">Connect</label>
-
-<select name="connect" id="connect">
-  <option value="contact">Contact</option>
-  <option value="newsletter">Newsletter</option>
-  <option value="marketplace">Marketplace</option>
-  <option value="linkedin">Linkedin</option>
-</select>
+  <div class="dropdown">
+    <button class="dropbtn">Connect
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Contact</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Linkedin</a>
+    </div>
+  </div>
+</div>
 
 <div class="login">
-  <p>Login</p>
+  <a href="#"><p>Login</p></a>
   <button class="btn1">Sign Up</button>
 </div>
 </nav>
@@ -62,86 +74,87 @@
 </div>
 </div>
 
-<h1>Designed for the future</h1>
 
-<div class="Intro">
-<big>Introducing an extensible editor</big>
-<p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-</p>
-
-<big>Robust content management</big>
-<p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-</p>
-
+<h1 class="design">Designed for the future</h1>
+<div class="intro">
+<div class="intro1">
+  <big>Introducing an extensible editor</big>
+  <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+    The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+    videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+    change the looks of a blog.
+  </p>
+  
+  <big>Robust content management</big>
+  <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+    by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+  </p>
+</div>
 <div class="illus-1">
   <img src="./images/illustration-editor-desktop.svg" alt="">
 </div>
 </div>
 
 <div class="state">
-
 <div class="illus-2">
   <img src="./images/illustration-phones.svg" alt="">
   <p style="background-image: url(./images/bg-pattern-circles.svg)"></p>
 </div>
-
-<big>State of the Art Infrastructure</big>
-<p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+<div class="intro2">
+  <big>State of the Art Infrastructure</big>
+  <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+    This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+</div>
 </div>
 
 <div class="free">
-
 <div class="illus-3">
   <img src="./images/illustration-laptop-desktop.svg" alt="">
 </div>
+<div class="intro3">
+  <big>Free, open, simple</big>
+  <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+  
+    <big>Powerful tooling</big>
+    <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.
+    </p>
+</div>
 
-<big>Free, open, simple</big>
-<p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-
-  <big>Powerful tooling</big>
-  <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-    capable of producing even the most complicated sites.
-  </p>
 </div>
 
 <footer class="footer">
   <h1>Blogr</h1>
+    <div class="product">
+      <p> Product</p>
+      <a href="#"> Overview</a>
+      <a href="#"> Pricing</a>
+      <a href="#"> Marketplace</a>
+      <a href="#"> Features</a>
+      <a href="#"> Integrations</a>
+    </div>
+  
+    <div class="company">
+      <p>Company</p>
+      <a href="#"> About</a>
+      <a href="#"> Team</a>
+      <a href="#"> Blog</a>
+      <a href="#"> Careers</a>
+    </div>
+  
+    <div class="connect">
+      <p>Connect</p>
+      <a href="#"> Contact</a>
+      <a href="#"> Newsletter</a>
+      <a href="#"> LinkedIn</a> 
+    </div>
 
-  <div class="product">
-    <p> Product</p>
-    <a href="#"> Overview</a>
-    <a href="#"> Pricing</a>
-    <a href="#"> Marketplace</a>
-    <a href="#"> Features</a>
-    <a href="#"> Integrations</a>
-  </div>
-
-  <div class="company">
-    <p>Company</p>
-    <a href="#"> About</a>
-    <a href="#"> Team</a>
-    <a href="#"> Blog</a>
-    <a href="#"> Careers</a>
-  </div>
-
-  <div class="connect">
-    <p>Connect</p>
-    <a href="#"> Contact</a>
-    <a href="#"> Newsletter</a>
-    <a href="#"> LinkedIn</a> 
-
-  </div>
-</footer>
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">FUMEZYKAY</a>.
-  </div>
+  </div> -->
+</footer>
 </body>
 </html>
