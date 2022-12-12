@@ -7,6 +7,7 @@
 body{
     Font-size: 16px;
     font-family: 'Overpass','Ubuntu';
+    overflow-x: hidden;
 }
 .header {
     height: 80vh;
@@ -198,37 +199,42 @@ display: none;
     justify-content: space-between;
     background-color: hsl(237, 17%, 21%);
     width: 100%;
-    /* height: 70vh; */
+    /* height: 50vh; */
     border-bottom-left-radius: 6rem;
     border-top-right-radius: 6rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 10px;
     z-index: -1;
   }
-  .state-lay-img {
+   .state-lay-img {
     position: absolute;
     width: 70%;
-    height: 100%;
+    height: 80%;
     background-image: url('./images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
     /* background-position: calc(-30% - 3px); */
-    background-size: 50%;
-    top: -50%;
-    left: -15%;
-    /* z-index: -1; */
-  }
+    background-size: 100%;
+    top: -10%;
+    left: 5%;  
+    z-index: -1;
+    overflow: hidden;
+  } 
   .illus-2{
     width: 50%;
     padding-left: 5rem;
+    /* overflow: hidden; */
   }
   .illus-2 img{
     width: 100%;
     margin-top: -5rem;
-    margin-bottom: -10rem;
+    margin-bottom: -8.5rem;
+    /* overflow: hidden; */
   }
   .intro2{
     width: 50%;
     z-index: 2;
+    padding-right: 5em;
+    padding-left: 5em;
   }
   .state big{
     color: hsl(0, 0%, 100%);
@@ -348,5 +354,22 @@ display: none;
         text-align: center;
         margin-top: 5rem;
 
+    }
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: unset;
+        text-align: center;
+        justify-content: center;
+    }
+    .intro1 {
+        padding-top: unset;
+        padding-left: unset;
+        text-align: center;
+    }
+    .illus-1{
+        padding-top: 5rem;
+        width: auto;
+        right: unset;
     }
 }
