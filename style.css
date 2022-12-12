@@ -68,6 +68,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding-top: 2rem;
 }
 
 .navbar a {
@@ -127,42 +128,51 @@ body {
 }
 
 .btn1 {
-    background-color: #fff;
-    color: hsl(356, 100%, 66%);
-    border-style: solid;
-    border-color: hsl(356, 100%, 66%);
-    border-radius: 30px;
-    height: fit-content;
+    background:hsl(0, 0%, 100%);
     padding: .5rem 1.5rem;
-    font-size: 1rem;
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    font-family: "Overpass";
+    color: hsl(353, 100%, 62%);
+    border-radius: 35px;
+    transition: all .4s;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+.btn1:hover{
+    color: hsl(0, 0%, 100%);
+    background: transparent;
 }
 
 .btn2 {
-    background-color: #fff;
-    color: hsl(356, 100%, 66%);
-    border-style: solid;
-    border-color: hsl(356, 100%, 66%);
-    border-radius: 30px;
-    height: fit-content;
+    background: transparent;
     padding: .5rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-top: 2rem;
+    font-family: "Overpass";
+    color:hsl(0, 0%, 100%);
+    border-radius: 35px;
+    border: 2px solid hsl(0, 0%, 100%);
+    transition: all .4s;
+}
+.btn2:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
 }
 
 .btn3 {
-    background-color: hsl(356, 100%, 66%);
-    color: hsl(0, 0%, 100%);
-    border-style: solid;
-    border-color: hsl(0, 0%, 100%);
-    border-radius: 30px;
-    height: fit-content;
+    background:hsl(0, 0%, 100%);
     padding: .5rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-top: 2rem;
+    font-family: "Overpass";
+    color: hsl(353, 100%, 62%);
+    border-radius: 35px;
+    transition: all .4s;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+.btn3:hover{
+    color: hsl(0, 0%, 100%);
+    background: transparent;
 }
 
 .drop img {
@@ -175,6 +185,7 @@ body {
     width: 100%;
     justify-content: space-between;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .intro1 {
@@ -182,13 +193,14 @@ body {
     padding-left: 7rem;
     flex-basis: 400px;
     flex-grow: 1;
+    margin-left: -65%;
 }
 
 h1.design {
     color: hsl(208, 49%, 24%);
     font-size: 2rem;
     font-weight: 600;
-    display: block;
+    margin-left: 40%;
     text-align: center;
     align-items: center;
     padding-top: 5rem;
@@ -212,16 +224,18 @@ h1.design {
 
 .illus-1 {
     flex-grow: 1;
-    flex: 60%;
+    flex: 50%;
     position: relative;
-    right: -10%;
+    right: -15%;
+    margin-top: 4rem;
+    /* margin: -9.5% -20% 0 2rem */
     padding-bottom: 3rem;
 }
 
 .illus-1 img {
     height: auto;
     width: 100%;
-    margin: -9.5% -20% 0 2rem;
+    
     /* position: relative; */
 }
 
@@ -291,6 +305,7 @@ h1.design {
     width: 100%;
     justify-content: space-between;
     padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .intro3 {
