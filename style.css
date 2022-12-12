@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     Font-size: 16px;
-    font-family: 'Overpass','Ubuntu';
+    font-family: 'Overpass', 'Ubuntu';
     overflow-x: hidden;
 }
+
 .header {
     height: 80vh;
-    width: 100%; 
-    background-image: linear-gradient(to bottom, hsl(353, 100%, 62%) , hsl(13, 100%, 72%)
-    );
+    width: 100%;
+    background-image: linear-gradient(to bottom, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
@@ -22,11 +24,14 @@ body{
     z-index: 2;
     overflow: hidden;
 }
-.header .navbar{
+
+.header .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 clamp(2rem, 7vw, 8rem);
     padding-top: 3rem;
 }
+
 .img-layer {
     position: absolute;
     width: 100%;
@@ -37,42 +42,49 @@ body{
     background-position: center;
     z-index: -1;
 }
-.header h1{
+
+.header h1 {
     display: block;
     font-size: 2.5rem;
     font-weight: 500;
     color: hsl(0, 0%, 100%);
-  }
-  .header p{
+}
+
+.header p {
     font-size: 1rem;
     font-weight: 300;
-    color:hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
     padding-top: 0.5rem;
-   }
-   .header .modern{
+}
+
+.header .modern {
     display: block;
     justify-content: center;
     text-align: center;
     padding-top: 5rem;
-   }
-   .btn{
+}
+
+.btn {
     display: flex;
     justify-content: center;
     gap: 1rem;
-   }
-   .navbar a {
+}
+
+.navbar a {
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
-  }
-  .dropdown {
+}
+
+.dropdown {
     float: left;
     overflow: hidden;
-  }
-  .dropdown .dropbtn {
+}
+
+.dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -81,33 +93,40 @@ body{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-  }
-  .navbar a:hover, .dropdown:hover .dropbtn {
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     background-color: hsl(237, 17%, 21%);
-  }
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
-  }
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
+
 .dropdown-content a:hover {
     background-color: hsl(237, 17%, 21%);
-  }
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  .btn1 {
+}
+
+.btn1 {
     background-color: #fff;
     color: hsl(356, 100%, 66%);
     border-style: solid;
@@ -118,9 +137,9 @@ body{
     font-size: 1rem;
     margin-top: 0.5rem;
     font-weight: 600;
-  }
-  
-  .btn2 {
+}
+
+.btn2 {
     background-color: #fff;
     color: hsl(356, 100%, 66%);
     border-style: solid;
@@ -131,8 +150,9 @@ body{
     font-size: 1rem;
     font-weight: 600;
     margin-top: 2rem;
-  }
-  .btn3 {
+}
+
+.btn3 {
     background-color: hsl(356, 100%, 66%);
     color: hsl(0, 0%, 100%);
     border-style: solid;
@@ -143,151 +163,171 @@ body{
     font-size: 1rem;
     font-weight: 600;
     margin-top: 2rem;
-  }
-  .drop img{
-display: none;
-  }  
+}
 
-  .intro{
+.drop img {
+    display: none;
+}
+
+.intro {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    overflow: hidden;
-  }
-  .intro1{
-    width: 50%;
+    overflow-x: hidden;
+}
+
+.intro1 {
     padding-top: 7rem;
     padding-left: 7rem;
-  }
-  h1.design{
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+h1.design {
     color: hsl(208, 49%, 24%);
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: 600;
     display: block;
     text-align: center;
     align-items: center;
     padding-top: 5rem;
-  }
-  .intro1 big{
+}
+
+.intro1 big {
     color: hsl(208, 49%, 24%);
     font-size: 1.5rem;
     font-weight: 600;
     display: block;
     padding-top: 2rem;
-  }
-  .intro1 p{
+}
+
+.intro1 p {
     color: hsl(237, 17%, 21%);
     font-size: 1rem;
     font-weight: 300;
     display: block;
     padding-top: 2rem;
-  }
-  .illus-1 {
-    width: 50%;
+}
+
+.illus-1 {
+    flex-grow: 1;
+    flex: 60%;
     position: relative;
     right: -10%;
     padding-bottom: 3rem;
-  }
-  .illus-1 img{
+}
+
+.illus-1 img {
+    height: auto;
     width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .state{
+    margin: -9.5% -20% 0 2rem;
+    /* position: relative; */
+}
+
+.state {
     position: relative;
     display: flex;
     justify-content: space-between;
     background-color: hsl(237, 17%, 21%);
     width: 100%;
-    /* height: 50vh; */
     border-bottom-left-radius: 6rem;
     border-top-right-radius: 6rem;
-    /* overflow: hidden; */
     padding: 10px;
     z-index: -1;
-  }
-   .state-lay-img {
+}
+
+.state-lay-img {
     position: absolute;
     width: 70%;
     height: 80%;
     background-image: url('./images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    /* background-position: calc(-30% - 3px); */
     background-size: 100%;
     top: -10%;
-    left: 5%;  
+    left: 5%;
     z-index: -1;
     overflow: hidden;
-  } 
-  .illus-2{
+}
+
+.illus-2 {
     width: 50%;
     padding-left: 5rem;
-    /* overflow: hidden; */
-  }
-  .illus-2 img{
+}
+
+.illus-2 img {
     width: 100%;
     margin-top: -5rem;
     margin-bottom: -8.5rem;
-    /* overflow: hidden; */
-  }
-  .intro2{
+}
+
+.intro2 {
     width: 50%;
     z-index: 2;
     padding-right: 5em;
     padding-left: 5em;
-  }
-  .state big{
+}
+
+.state big {
     color: hsl(0, 0%, 100%);
     font-size: 1.5rem;
     font-weight: 600;
     display: block;
     padding-top: 10rem;
     z-index: 2;
-  }
-  .state p{
+}
+
+.state p {
     color: hsl(0, 0%, 100%);
     font-size: 1rem;
     font-weight: 300;
     display: block;
     padding-top: 2rem;
     z-index: 2;
-  }
-  .free{
+}
+
+.free {
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding-top: 2rem;
-  }
-  .intro3{
+}
+
+.intro3 {
     width: 50%;
     margin-top: 10rem;
     padding-left: 7rem;
     padding-right: 7rem;
-  }
-  .intro3 big{
+}
+
+.intro3 big {
     color: hsl(208, 49%, 24%);
     font-size: 1.5rem;
     font-weight: 600;
     display: block;
     padding-top: 2rem;
-  }
-  .intro3 p{
+}
+
+.intro3 p {
     color: hsl(237, 17%, 21%);
     font-size: 1rem;
     font-weight: 300;
     display: block;
     padding-top: 2rem;
-  }
-  .illus-3 {
+}
+
+.illus-3 {
     width: 50%;
     position: relative;
     left: -15%;
     padding-bottom: 3rem;
-  }
-  .illus-3 img{
+}
+
+.illus-3 img {
     width: 100%;
-  }
-  .footer {
+}
+
+.footer {
     background-color: hsl(240, 10%, 16%);
     display: flex;
     justify-content: space-around;
@@ -295,58 +335,91 @@ display: none;
     padding-top: 3rem;
     padding-bottom: 7rem;
     border-top-right-radius: 6rem;
-  }
-.footer h1{
+}
+
+.footer h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     padding-left: 7rem;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
-    color:  hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
     display: block;
     padding-top: 1rem;
     padding-right: 5rem;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: hsl(13, 100%, 72%);
 }
-.footer p{
+
+.footer p {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     padding-right: 5rem;
 }
-@media screen and (max-width: 1024px) {
-    .navbar h1{
+
+/* @media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navbar h1 {
         font-size: 5rem;
         font-weight: 700;
     }
-    .navbar{
+
+    .header {
+        height: 80vh;
+        width: 100%;
+        background-image: linear-gradient(to bottom, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+        border-bottom-left-radius: 8rem;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .img-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
         background: url('./images/bg-pattern-intro-mobile.svg');
         background-repeat: no-repeat;
-        background-position: relative;
-        background-size: cover;
-        background-color: hsl(356, 100%, 66%);
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        background-size: calc();
+        background-position: center;
+        z-index: -1;
     }
-    .drop img{
+
+    .drop {
+        margin-left: 20rem;
+    }
+
+    .drop img {
         display: block;
         justify-content: flex-end;
+        margin-left: 20rem;
     }
-    .navbar a{
+
+    .navbar a {
         display: none;
     }
+
     .dropbtn {
         display: none;
     }
+
     .btn1 {
         display: none;
     }
-    .modern{
+
+    .modern {
         display: block;
         flex-direction: column;
         border-bottom-left-radius: unset;
@@ -355,6 +428,11 @@ display: none;
         margin-top: 5rem;
 
     }
+
+    h1.design {
+        font-size: 5rem;
+    }
+
     .intro {
         display: flex;
         flex-direction: column-reverse;
@@ -362,14 +440,136 @@ display: none;
         text-align: center;
         justify-content: center;
     }
+
     .intro1 {
+        width: 100%;
         padding-top: unset;
         padding-left: unset;
         text-align: center;
+        align-items: center;
     }
-    .illus-1{
+
+    .intro1 big {
+        padding-top: 5rem;
+        font-size: 4rem;
+    }
+
+    .intro1 p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .illus-1 {
         padding-top: 5rem;
         width: auto;
         right: unset;
     }
-}
+
+    .illus-1 img {
+        width: 100%;
+    }
+
+    .state {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30rem;
+        padding-bottom: 5rem;
+    }
+
+    .state big {
+        padding-top: 5rem;
+        font-size: 4.5rem;
+    }
+
+    .state p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .illus-2 {
+        width: 100%;
+        padding-left: unset;
+    }
+
+    .illus-2 img {
+        width: 100%;
+        margin-top: -50%;
+    }
+
+    .intro2 {
+        width: 100%;
+        padding-left: unset;
+        padding-right: unset;
+        text-align: center;
+    }
+
+    .free {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .illus-3 {
+        width: 100%;
+        left: unset;
+        position: unset;
+        padding-bottom: unset;
+        text-align: center;
+    }
+
+    .illus-3 img {
+        width: 100%;
+    }
+
+    .intro3 {
+        width: unset;
+        margin-top: 3rem;
+        padding-left: unset;
+        padding-right: unset;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .intro3 big {
+        padding-top: 5rem;
+        font-size: 4.5rem;
+    }
+
+    .intro3 p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer h1 {
+        padding-top: 5rem;
+        font-size: 4.5rem;
+        padding-left: unset;
+        padding-bottom: 3rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 2rem;
+        padding-top: 2rem;
+        line-height: 3rem;
+    }
+
+    .footer a {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+} */
