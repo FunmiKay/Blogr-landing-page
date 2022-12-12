@@ -8,35 +8,63 @@ body{
     Font-size: 16px;
     font-family: 'Overpass','Ubuntu';
 }
-header{
-    
-    position: relative;
-    width: 100%;
+.header {
     height: 80vh;
-    
-    background-size: 150%;
-    
-}
-.navbar {
+    width: 100%; 
+    background-image: linear-gradient(to bottom, hsl(353, 100%, 62%) , hsl(13, 100%, 72%)
+    );
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    border-bottom-left-radius: 8rem;
+    position: relative;
+    z-index: 2;
     overflow: hidden;
-    background-color: hsl(355, 100%, 74%);
-    font-family: 'Overpass','Ubuntu';
-    background-size: cover;
+}
+.header .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 4rem 10rem;
-  }
-  .navbar h1{
+    padding-top: 3rem;
+}
+.img-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('./images/bg-pattern-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: calc();
+    background-position: center;
+    z-index: -1;
+}
+.header h1{
+    display: block;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 500;
     color: hsl(0, 0%, 100%);
   }
-  .navbar a {
+  .header p{
+    font-size: 1rem;
+    font-weight: 300;
+    color:hsl(0, 0%, 100%);
+    padding-top: 0.5rem;
+   }
+   .header .modern{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5rem;
+   }
+   .btn{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+   }
+   .navbar a {
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
   }
   .dropdown {
@@ -48,7 +76,7 @@ header{
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 10px 10px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -62,7 +90,7 @@ header{
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
   }
   .dropdown-content a {
     float: none;
@@ -90,25 +118,7 @@ header{
     margin-top: 0.5rem;
     font-weight: 600;
   }
-  .modern{
-    display: block;
-    background-color: hsl(355, 100%, 74%);
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    border-bottom-left-radius: 6rem;
-  }
-  .modern h1{
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: hsl(0, 0%, 100%);
-  }
-  .modern p{
-    font-size: 1rem;
-    font-weight: 300;
-    color:hsl(0, 0%, 100%);
-    padding-top: 1rem;
-  }
+  
   .btn2 {
     background-color: #fff;
     color: hsl(356, 100%, 66%);
@@ -133,11 +143,15 @@ header{
     font-weight: 600;
     margin-top: 2rem;
   }
+  .drop img{
+display: none;
+  }  
 
   .intro{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    overflow: hidden;
   }
   .intro1{
     width: 50%;
@@ -175,16 +189,33 @@ header{
   }
   .illus-1 img{
     width: 100%;
+    overflow: hidden;
+    position: relative;
   }
   .state{
+    position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: hsl(237, 23%, 32%);
-    background-image: url('./images/bg-pattern-circles.svg') no-repeat;
-    background-position: center;
+    background-color: hsl(237, 17%, 21%);
     width: 100%;
+    /* height: 70vh; */
     border-bottom-left-radius: 6rem;
     border-top-right-radius: 6rem;
+    overflow: hidden;
+    padding: 10px;
+    z-index: -1;
+  }
+  .state-lay-img {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-image: url('./images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    /* background-position: calc(-30% - 3px); */
+    background-size: 50%;
+    top: -50%;
+    left: -15%;
+    /* z-index: -1; */
   }
   .illus-2{
     width: 50%;
@@ -197,6 +228,7 @@ header{
   }
   .intro2{
     width: 50%;
+    z-index: 2;
   }
   .state big{
     color: hsl(0, 0%, 100%);
@@ -204,6 +236,7 @@ header{
     font-weight: 600;
     display: block;
     padding-top: 10rem;
+    z-index: 2;
   }
   .state p{
     color: hsl(0, 0%, 100%);
@@ -211,6 +244,7 @@ header{
     font-weight: 300;
     display: block;
     padding-top: 2rem;
+    z-index: 2;
   }
   .free{
     display: flex;
@@ -220,7 +254,7 @@ header{
   }
   .intro3{
     width: 50%;
-    padding-top: 7rem;
+    margin-top: 10rem;
     padding-left: 7rem;
     padding-right: 7rem;
   }
@@ -251,6 +285,7 @@ header{
     background-color: hsl(240, 10%, 16%);
     display: flex;
     justify-content: space-around;
+    position: relative;
     padding-top: 3rem;
     padding-bottom: 7rem;
     border-top-right-radius: 6rem;
@@ -276,9 +311,42 @@ header{
     font-weight: 700;
     padding-right: 5rem;
 }
-/* .links{
-    display: flex;
-} */
-/* .attribution {
-    display: block;
-} */
+@media screen and (max-width: 1024px) {
+    .navbar h1{
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    .navbar{
+        background: url('./images/bg-pattern-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: relative;
+        background-size: cover;
+        background-color: hsl(356, 100%, 66%);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .drop img{
+        display: block;
+        justify-content: flex-end;
+    }
+    .navbar a{
+        display: none;
+    }
+    .dropbtn {
+        display: none;
+    }
+    .btn1 {
+        display: none;
+    }
+    .modern{
+        display: block;
+        flex-direction: column;
+        border-bottom-left-radius: unset;
+        background-color: unset;
+        text-align: center;
+        margin-top: 5rem;
+
+    }
+}
