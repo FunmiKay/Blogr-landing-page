@@ -10,6 +10,7 @@ body {
     Font-size: 16px;
     font-family: 'Overpass', 'Ubuntu';
     overflow-x: hidden;
+    width: 100%;
 }
 
 .header {
@@ -270,9 +271,7 @@ h1.design {
 }
 
 .illus-2 img {
-    width: 100%;
-    margin-top: -5rem;
-    margin-bottom: -8.5rem;
+    margin: -12.5% 0 -20.5% 0;
 }
 
 .intro2 {
@@ -352,11 +351,9 @@ h1.design {
     border-top-right-radius: 6rem;
 }
 
-.footer h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: hsl(0, 0%, 100%);
-    padding-left: 7rem;
+.footer img{
+    width: 100px;
+    height: 50px;
 }
 
 .footer a {
@@ -377,14 +374,14 @@ h1.design {
     padding-right: 5rem;
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     body {
         width: 100%;
         overflow-x: hidden;
     }
-
+    
     .navbar h1 {
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 700;
     }
 
@@ -418,8 +415,8 @@ h1.design {
 
     .drop img {
         display: block;
-        justify-content: flex-end;
-        margin-left: 20rem;
+        margin: 5px;
+        width: 30px;
     }
 
     .navbar a {
@@ -445,7 +442,8 @@ h1.design {
     }
 
     h1.design {
-        font-size: 5rem;
+        font-size: 3rem;
+        margin-left: unset;
     }
 
     .intro {
@@ -454,6 +452,7 @@ h1.design {
         padding: unset;
         text-align: center;
         justify-content: center;
+        
     }
 
     .intro1 {
@@ -462,11 +461,12 @@ h1.design {
         padding-left: unset;
         text-align: center;
         align-items: center;
+        margin-left: unset;
     }
 
     .intro1 big {
-        padding-top: 5rem;
-        font-size: 4rem;
+        padding-top: 3rem;
+        font-size: 3rem;
     }
 
     .intro1 p {
@@ -496,7 +496,7 @@ h1.design {
 
     .state big {
         padding-top: 5rem;
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
 
     .state p {
@@ -530,19 +530,20 @@ h1.design {
     }
 
     .illus-3 {
-        width: 100%;
+      width: unset;
         left: unset;
         position: unset;
         padding-bottom: unset;
         text-align: center;
+        padding-left: 7rem;
     }
 
     .illus-3 img {
-        width: 100%;
+    width: 100%;
     }
 
     .intro3 {
-        width: unset;
+        width: 100%;
         margin-top: 3rem;
         padding-left: unset;
         padding-right: unset;
@@ -552,7 +553,7 @@ h1.design {
 
     .intro3 big {
         padding-top: 5rem;
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
 
     .intro3 p {
@@ -564,27 +565,48 @@ h1.design {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
         text-align: center;
     }
 
-    .footer h1 {
-        padding-top: 5rem;
-        font-size: 4.5rem;
-        padding-left: unset;
-        padding-bottom: 3rem;
-        align-items: center;
-        text-align: center;
+    .footer img{
+        width: 100px;
+        height: 50px;
     }
-
     .footer p {
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-top: 2rem;
         line-height: 3rem;
+        text-align: center;
+        padding-left: 4rem;
     }
 
     .footer a {
+        padding-left: 4rem;
+        text-align: center;
         font-size: 2rem;
         line-height: 3rem;
     }
-} */
+    
+    @media screen and (max-width: 450px) {
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+        .drop {
+            margin-left: 10rem;
+        }
+    
+        .drop img {
+            display: block;
+            margin: 5px;
+            width: 30px;
+        }
+        @media screen and (max-width: 300px) {
+            body {
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+} 
