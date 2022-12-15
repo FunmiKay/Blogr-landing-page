@@ -442,7 +442,6 @@ h1.design {
     }
 
     h1.design {
-        font-size: 3rem;
         margin-left: unset;
     }
 
@@ -466,12 +465,15 @@ h1.design {
 
     .intro1 big {
         padding-top: 3rem;
-        font-size: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .intro1 p {
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .illus-1 {
@@ -496,11 +498,14 @@ h1.design {
 
     .state big {
         padding-top: 5rem;
-        font-size: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .state p {
-        font-size: 2rem;
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         line-height: 3rem;
     }
 
@@ -553,12 +558,15 @@ h1.design {
 
     .intro3 big {
         padding-top: 5rem;
-        font-size: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .intro3 p {
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .footer {
@@ -575,7 +583,7 @@ h1.design {
         height: 50px;
     }
     .footer p {
-        font-size: 2.5rem;
+        font-size: 1rem;
         padding-top: 2rem;
         line-height: 3rem;
         text-align: center;
@@ -585,7 +593,7 @@ h1.design {
     .footer a {
         padding-left: 4rem;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1rem;
         line-height: 3rem;
     }
     
