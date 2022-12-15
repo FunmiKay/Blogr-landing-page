@@ -236,8 +236,6 @@ h1.design {
 .illus-1 img {
     height: auto;
     width: 100%;
-    
-    /* position: relative; */
 }
 
 .state {
@@ -418,11 +416,14 @@ h1.design {
         margin: 5px;
         width: 30px;
     }
+    .drop
 
     .navbar a {
         display: none;
     }
-
+.login{
+    display: none;
+}
     .dropbtn {
         display: none;
     }
